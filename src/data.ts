@@ -32,7 +32,7 @@ export const pillars = [
   {
     kicker: 'Pillar 01',
     title: 'AI & Advanced Analytics',
-    body: "AI is the strategy, not a side project. Predictive analytics, intelligent compliance, and agent-led automation — built to run the business, not just demo well.",
+    body: "AI is the strategy here, not a side project. Predictive analytics. Compliance that monitors itself. Agents that take real work off your team — built to run in production, not just demo well.",
     points: [
       'Predictive analytics and executive decision dashboards',
       'Intelligent compliance and risk monitoring',
@@ -56,7 +56,7 @@ export const pillars = [
   {
     kicker: 'Pillar 03',
     title: 'Talent & Staffing',
-    body: 'The hardest part of any AI program is people. We design the team structure first, then staff it with specialists who can ship.',
+    body: 'The hardest part of any AI program is people. We design the team structure first, then staff it with specialists who can ship. A pod goes live in 30 to 45 days.',
     points: [
       "Dedicated project squads for work that can't slip",
       'Hybrid onsite–offshore pods, ramped in 30 to 45 days',

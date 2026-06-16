@@ -79,8 +79,9 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-white/60 text-sm sm:text-base leading-relaxed mb-7 max-w-md"
         >
-          Most AI work dies in the demo. Ours runs the business — built inside Global Capability
-          Centers, staffed by people who own the result, ramped in weeks not quarters.
+          Most AI work dies in the demo. Ours runs the business. We build it inside a Global
+          Capability Center, staff it with people who own the outcome, and have a pod live in 30 to
+          45 days.
         </motion.p>
 
         <motion.div

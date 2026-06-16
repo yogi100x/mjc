@@ -76,8 +76,8 @@ export default function ScrubVideo() {
             Four stages. One operator from day one to steady state.
           </h2>
           <p className="text-white/55 text-lg max-w-[520px]">
-            We don't hand off between strategy and run. The same team takes your capability center from
-            a blank page to a humming operation.{' '}
+            We don't hand off between strategy and run. The same team takes your center from a blank
+            page to steady state.{' '}
             <span className="hidden lg:inline text-white/35">(Move your cursor to scrub.)</span>
           </p>
         </Reveal>

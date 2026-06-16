@@ -10,7 +10,7 @@ export default function Industries() {
             <span className="w-6 h-px bg-brand-red" /> Industries
           </span>
           <h2 className="font-display font-bold text-3xl sm:text-5xl tracking-tight leading-[1.02] mt-5 text-ink">
-            Trusted across diverse business verticals.
+            Ten verticals. One delivery model.
           </h2>
         </Reveal>
         <div className="flex flex-wrap gap-3">

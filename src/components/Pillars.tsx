@@ -13,8 +13,8 @@ export default function Pillars() {
             Three pillars. One accountable team.
           </h2>
           <p className="text-ink/55 text-lg max-w-[560px]">
-            AI is the strategy. A capability center is where it ships. And the right people are how it
-            keeps running. We own all three — end to end.
+            AI is the strategy. A capability center is where it ships. People keep it running. We own
+            all three.
           </p>
         </Reveal>
 
