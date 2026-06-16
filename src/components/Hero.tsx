@@ -9,16 +9,30 @@ export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
 
   // React's `muted` JSX attr doesn't reliably set the DOM property,
-  // which blocks autoplay. Force it + kick playback via ref.
+  // which blocks autoplay. Force muted + retry play across load events,
+  // with a first-interaction fallback for strict autoplay policies.
   useEffect(() => {
     const v = videoRef.current
     if (!v) return
     v.muted = true
     v.defaultMuted = true
-    const tryPlay = () => v.play().catch(() => {})
-    tryPlay()
-    v.addEventListener('canplay', tryPlay)
-    return () => v.removeEventListener('canplay', tryPlay)
+    v.setAttribute('muted', '')
+    const play = () => {
+      const p = v.play()
+      if (p) p.catch(() => {})
+    }
+    const events = ['loadeddata', 'canplay', 'canplaythrough']
+    play()
+    events.forEach((e) => v.addEventListener(e, play))
+    const onInteract = () => {
+      play()
+      window.removeEventListener('pointerdown', onInteract)
+    }
+    window.addEventListener('pointerdown', onInteract)
+    return () => {
+      events.forEach((e) => v.removeEventListener(e, play))
+      window.removeEventListener('pointerdown', onInteract)
+    }
   }, [])
 
   return (
@@ -34,8 +48,9 @@ export default function Hero() {
         playsInline
         preload="auto"
       />
-      {/* Legibility scrim */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40" />
+      {/* Legibility scrim — dark only where text sits, footage stays visible top-right */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 to-transparent" />
 
       <Navbar />
 
