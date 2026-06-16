@@ -68,11 +68,11 @@ export const pillars = [
 ]
 
 export const capabilities = [
-  { ix: '01', title: 'ERP Consulting', body: 'SAP, Oracle Fusion, Yardi, and Dynamics — modernized for cloud and intelligence.' },
+  { ix: '01', title: 'ERP Consulting', body: 'SAP, Oracle Fusion, Yardi, and Dynamics, modernized for cloud and AI.' },
   { ix: '02', title: 'Information Security', body: 'GRC, identity, and cyber risk management across the whole stack.' },
-  { ix: '03', title: 'Cloud Engineering', body: 'Azure, AWS, and Google Cloud, architected to scale.' },
+  { ix: '03', title: 'Cloud Engineering', body: 'Azure, AWS, and Google Cloud, built to scale.' },
   { ix: '04', title: 'Data Engineering', body: 'Pipelines and platforms that make enterprise AI trustworthy and fast.' },
-  { ix: '05', title: 'AI / ML & IoT', body: 'Production AI — predictive, agentic, and connected to live data.' },
+  { ix: '05', title: 'AI / ML & IoT', body: 'Production AI that predicts, acts, and runs on live data.' },
   { ix: '06', title: 'Managed Services', body: 'Technical support and managed operations that keep systems running.' },
 ]
 
@@ -108,7 +108,7 @@ export const logos = [
 
 export const lifecycle = [
   { num: '01', tag: 'Design', title: 'Decide where and how', body: 'Location strategy, total-cost modeling, and an operating model mapped to your objectives.' },
-  { num: '02', tag: 'Establish', title: 'Stand it up', body: 'Teams, infrastructure, governance, SOPs, and SLAs — the backbone that makes delivery repeatable.' },
+  { num: '02', tag: 'Establish', title: 'Stand it up', body: 'Teams, infrastructure, governance, SOPs, SLAs. The backbone that makes delivery repeatable.' },
   { num: '03', tag: 'Scale', title: 'Grow on demand', body: 'Add capability and headcount as the work grows, with pods that ramp in 30 to 45 days.' },
   { num: '04', tag: 'Optimize', title: 'Keep sharpening', body: 'Continuous improvement on cost, performance, and quality, measured against real KPIs.' },
 ]
@@ -118,6 +118,6 @@ export const differences = [
   { di: 'ii.', title: 'Fewer surprises', body: 'Visibility and compliance built in, so the risky parts stay under control.' },
   { di: 'iii.', title: 'Deeper insight', body: 'Solutions that connect to your existing systems and surface live, usable data.' },
   { di: 'iv.', title: 'Reporting that keeps up', body: 'Accurate financial and operational reporting without the month-end scramble.' },
-  { di: 'v.', title: 'Flexible by design', body: 'Add capability as goals shift — no rip-and-replace, no lock-in tax.' },
-  { di: 'vi.', title: 'One accountable team', body: 'Strategy, build, talent, and run — owned end to end, not handed off.' },
+  { di: 'v.', title: 'Flexible by design', body: 'Add capability as goals shift. No rip-and-replace, no lock-in tax.' },
+  { di: 'vi.', title: 'One accountable team', body: 'Strategy, build, talent, run. Owned end to end, not handed off.' },
 ]
